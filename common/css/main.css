@@ -1,0 +1,157 @@
+@import "bootstrap.min.css";
+@import "global_vars.css";
+
+
+/* Name: Tri Waluyono
+    Class: 1 ITF WT
+    R-number: r1012723
+     */
+
+:root {
+  --primary-color: #f8f9fa;
+  --secondary-color: #d1bfab;
+  --accent: #136f63;
+  --text-color: black;
+  --navbar-text: var(--primary-color);
+}
+
+.bg-custom-navbar {
+  background-color: var(--secondary-color) !important;
+}
+
+.navbar-custom-text {
+  color: var(--navbar-text) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--accent);
+  color: var(--primary-color);
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: var(--accent);
+  color: var(--primary-color) !important;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.navbar-logo {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+}
+
+.table th {
+  background-color: var(--accent) !important;
+  color: var(--primary-color) !important;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: black;
+  font-weight: 300;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+  color: var(--primary-color);
+  font-weight: 600;
+  border: #212529 1px solid;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--primary-color);
+}
+
+.btn-accent:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.standalone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--accent) !important;
+  text-shadow: var(--accent) !important;
+  font-weight: 600;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.social a {
+  text-decoration: none;
+  width: 30px;
+  height: auto;
+}
+
+.border-accent {
+  border-color: var(--accent) !important;
+  border-width: 2px !important;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+/* Contact page specific styles */
+.contact-container {
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(19, 111, 99, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+

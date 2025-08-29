@@ -1,0 +1,310 @@
+<!-- Name: Tri Waluyono
+    Class: 1 ITF WT
+    R-number: r1012723
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Gotre Co-Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="common/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="common/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="common/favicon/favicon-16x16.png">
+    <link rel="manifest" href="common/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="common/css/main.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-custom-navbar navbar-custom-text shadow-lg fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="common/img/Logo Gotre.png" alt="GOTRE Logo" class="navbar-logo" />
+          GOTRE Co-Workspace
+         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container contact-container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <h1 class="text-center mb-5">Contact & Registration</h1>
+
+          <div class="alert alert-info mb-4">
+            <i class="fas fa-info-circle me-2"></i> Please fill out the form below to inquire about our workspace options or to register for membership.
+          </div>
+
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="clientName" class="form-label">Full Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="clientName" name="clientName" required>
+              <div class="invalid-feedback">
+                Please provide your full name.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="clientEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="clientEmail" name="clientEmail" required>
+              <div class="invalid-feedback">
+                Please provide a valid email address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="clientPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="clientPhone" name="clientPhone">
+              <div class="form-text">Optional, but recommended for quicker communication</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="selectedPackage" class="form-label">Select a Package <span class="text-danger">*</span></label>
+              <select class="form-select" id="selectedPackage" name="selectedPackage" required>
+                <option value="" disabled selected>--- Select Package ---</option>
+                <option value="daypass">Day Pass (€39)</option>
+                <option value="hotdesk">Hot Desk (€250 Monthly)</option>
+                <option value="dedicateddesk">Dedicated Desk (€360 Monthly)</option>
+                <option value="privateoffice">Private Office (€1500 Monthly)</option>
+                <option value="5days">5 Days/Month (€150 Monthly)</option>
+                <option value="10days">10 Days/Month (€250 Monthly)</option>
+                <option value="basic">Basic Flexible Workspace (€127/month)</option>
+                <option value="resident">Resident Dedicated Desk (€270–€360/month)</option>
+                <option value="enterprise">Enterprise/Team (from €1,500/month)</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a package option.
+              </div>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+              <label class="form-check-label" for="newsletter">Subscribe to our newsletter for updates and special offers</label>
+            </div>
+
+            <div class="mb-3">
+              <label for="clientMessage" class="form-label">Additional Message</label>
+              <textarea class="form-control" id="clientMessage" name="clientMessage" rows="4" placeholder="Tell us about your specific needs or any questions you may have..."></textarea>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="termsAgree" name="termsAgree" required>
+              <label class="form-check-label" for="termsAgree">I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">terms and conditions</a> <span class="text-danger">*</span></label>
+              <div class="invalid-feedback">
+                You must agree to the terms and conditions before submitting.
+              </div>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-accent fw-bold" id="submitBtn">Send Inquiry</button>
+            </div>
+          </form>
+
+          <div class="text-center mt-4">
+            <p class="text-muted"><small>Fields marked with <span class="text-danger">*</span> are required.</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marker-alt fa-3x mb-3 text-accent"></i>
+              <h5 class="card-title">Visit Us</h5>
+              <p class="card-text">
+                1234 Cowork St.<br>
+                Suite 567<br>
+                Brussels, Belgium 1000
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-phone fa-3x mb-3 text-accent"></i>
+              <h5 class="card-title">Call Us</h5>
+              <p class="card-text">
+                <a href="tel:+3223456789" class="text-decoration-none text-dark">+32 234 567 890</a><br>
+                <a href="tel:+3298765432" class="text-decoration-none text-dark">+32 987 654 321</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-clock fa-3x mb-3 text-accent"></i>
+              <h5 class="card-title">Opening Hours</h5>
+              <p class="card-text">
+                Monday - Friday: 8am - 9pm<br>
+                Saturday: 9am - 6pm<br>
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>1. Membership Agreement</h6>
+            <p>By registering for GOTRE Co-Workspace, you agree to abide by our community guidelines, respect other members, and maintain a professional environment.</p>
+
+            <h6>2. Payment Terms</h6>
+            <p>Membership fees are due on the 1st of each month. A late fee may be applied for payments received after the 5th. We accept credit/debit cards and bank transfers.</p>
+
+            <h6>3. Cancellation Policy</h6>
+            <p>Members must provide at least 30 days' notice before cancellation. No refunds will be issued for unused portions of a membership period.</p>
+
+            <h6>4. Workspace Use</h6>
+            <p>Workspaces are available on a first-come, first-served basis for flexible membership plans. Dedicated desks and private offices are reserved exclusively for the registered member or team.</p>
+
+            <h6>5. Internet Usage</h6>
+            <p>Our high-speed internet is provided for professional use. We prohibit illegal downloads, streaming that consumes excessive bandwidth, and any activities that may compromise our network security.</p>
+
+            <h6>6. Meeting Room Reservations</h6>
+            <p>Meeting rooms must be booked in advance through our online portal. Cancellations must be made at least 24 hours in advance to avoid charges.</p>
+
+            <h6>7. Guest Policy</h6>
+            <p>Members may bring guests for short meetings. Guests staying longer than 2 hours must register at reception and may incur additional fees.</p>
+
+            <h6>8. Privacy</h6>
+            <p>GOTRE Co-Workspace collects personal information solely for communication and billing purposes. We will never share your information with third parties without your consent.</p>
+
+            <h6>9. Liability</h6>
+            <p>GOTRE Co-Workspace is not responsible for lost or stolen items. Members are advised to secure their belongings at all times.</p>
+
+            <h6>10. Changes to Terms</h6>
+            <p>GOTRE Co-Workspace reserves the right to modify these terms at any time. Members will be notified of significant changes via email.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submission Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="successModalLabel">Inquiry Submitted</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center mb-4">
+              <i class="fas fa-check-circle text-success fa-4x"></i>
+            </div>
+            <p>Thank you for your interest in GOTRE Co-Workspace!</p>
+            <p>We have received your inquiry and will contact you within 24 hours to discuss your selected package and answer any questions.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<footer class="footer pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Address -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Our Address</h5>
+        <p>1234 Cowork St.<br>Suite 567<br>Brussels, Belgium 1000</p>
+      </div>
+
+      <!-- Hotline -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Hotline</h5>
+        <p><a href="tel:+3223456789" class="text-decoration-none text-dark">+32 234 567 890</a></p>
+        <p><a href="tel:+3298765432" class="text-decoration-none text-dark">+32 987 654 321</a></p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="social col-md-4 mb-4">
+        <h5 class="mb-3">Follow Us</h5>
+        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" class="text-dark me-3 fs-4" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://pinterest.com/yourprofile" target="_blank" rel="noopener" class="text-dark me-3 fs-4" aria-label="pinterest">
+            <i class="fa-brands fa-square-pinterest"></i>
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener" class="text-dark me-3 fs-4" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/company/yourcompany" target="_blank" rel="noopener" class="text-dark fs-4" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+    </div>
+    <hr class="border-light" />
+    <div class="col-12 text-center py-3 text-dark">
+       <span class="small"><a href="https://www.thomasmore.be/" target="_blank" rel="noreferrer" class="text-dark">Copyright © 2025 Thomas More</a> - This company is fictitious.
+        <p>This page was created by Tri Waluyono</p></span>
+    </div>
+    <div class="container text-center py-2 text-white">
+
+    </div>
+  </div>
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="common/js/contact.js"></script>
+  </body>
+</html>
